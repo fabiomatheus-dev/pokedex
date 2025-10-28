@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #a8e6cf;
+  background-image: url('pokemon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  width: 80%; /* ou 500px, se preferir */
+  max-width: 625px; /* limite máximo pra não ficar enorme */
+  min-height: 600px; /* altura mínima, pra não ficar muito pequeno */
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.play-area {
+  width: 100%;
+  height: 100%;
+  background: #89CFF0;
+}
+
+
+  h1 {
+    color: #003366;
+  }
+
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  button {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #4fb08a;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #error {
+    color: red;
+    font-weight: bold;
+  }
+
+  .pokemon-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+
+  .pokemon-name {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2a6041;
+  }
+
+  .pokemon-info {
+    font-size: 14px;
+    color: #333;
+  }
+
+  #pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #pagination {
+    margin-top: 20px;
+  }
+
+  #pagination button {
+    background-color: #2a6041;
+    margin: 5px;
+  }
+
+  #pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .favorite-btn {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  #view-favorites {
+    background-color: #003366;
+  }
+
+  #back-button {
+    background-color: #2a6041;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  button#next-button {
+    background-color: #003366;
+  }

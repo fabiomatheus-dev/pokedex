@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <div class="play-area">
+<h1>POKEDEX</h1>
+<input type="text" id="pokemon-input" placeholder="Digite o nome ou ID do Pokémon">
+<button id="fetch-button">Buscar Pokémon</button>
+<button id="view-favorites">Ver Favoritos ⭐</button>
+<p id="error"></p>
+
+<div id="pokemon-list"></div>
+
+<div id="pagination">
+  <button id="prev-button" disabled>⬅ Página anterior</button>
+  <button id="next-button">Próxima página ➡</button>
+</div>
+
+<button id="back-button">⬅ Voltar à lista</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
